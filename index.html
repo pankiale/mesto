@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Место</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+    <a href="#"><img class="header__logo" src="./images/logo.svg" alt="лого"/></a>
+</header>
+<main class="content">
+    <section class="profile">
+        <img class="profile__avatar" src="./images/kusto.jpg" alt="Кусто">
+        <div class="profile__info">
+            <div class="profile__title-wrapper">
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <button class="profile__edit-button"></button>
+            </div>
+            <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button">
+        </button>
+    </section>
+    <section class="elements">
+        <article class="element">
+            <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+            <div class="element__wrapper">
+                <h2 class=" element__title">Карачаевск</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+        <article class="element">
+            <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+            <div class="element__wrapper">
+                <h2 class="element__title">Гора Эльбрус</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+        <article class="element">
+            <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+            <div class="element__wrapper">
+                <h2 class="element__title">Домбай</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+        <article class="element">
+            <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+            <div class="element__wrapper">
+                <h2 class="element__title">Гора Эльбрус</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+        <article class="element">
+            <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+            <div class="element__wrapper">
+                <h2 class="element__title">Домбай</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+        <article class="element">
+            <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+            <div class="element__wrapper">
+                <h2 class="element__title">Карачаево-Черкессия</h2>
+                <button class="element__like-button"></button>
+            </div>
+        </article>
+    </section>
+    <section class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button"></button>
+            <form class="form">
+                <h2 class="form__title">Редактировать профиль</h2>
+                <fieldset class="form__input-container">
+                    <input type="text" class="form__item form__item_prof_title" required>
+                    <input type="text" class="form__item form__tiem_prof_subtitle" required>
+                </fieldset>
+                <button class="form__save-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <p class="footer__copyright">© 2020 Mesto Russia</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
