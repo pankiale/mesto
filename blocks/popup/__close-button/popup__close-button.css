@@ -3,7 +3,7 @@
 	height: 19px;
 	border: none;
 	box-sizing: border-box;
-	background-image: url("./images/close_icon.svg");
+	background-image: url("../../../images/close_icon.svg");
 	background-color: rgba(0, 0, 0, .5);
 	background-position: center;
 	background-repeat: no-repeat;

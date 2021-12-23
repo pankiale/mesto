@@ -3,7 +3,7 @@
 	height: 19px;
 	border: none;
 	box-sizing: border-box;
-	background-image: url("/images/heart.svg");
+	background-image: url("../../../images/heart.svg");
 	background-color: #FFFFFF;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -12,5 +12,5 @@
 }
 
 .element__like-button:active {
-	background-image: url("/images/heart_black.svg");
+	background-image: url("../../../images/heart_black.svg");
 }
