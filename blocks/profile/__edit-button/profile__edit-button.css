@@ -8,9 +8,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	margin-left: 16px;
 	grid-area: edit-button;
 	align-self: flex-end;
+	margin-bottom: 5px;
 }
 
 @media screen and (max-width: 580px) {

@@ -1,0 +1,13 @@
+.popup__container {
+	display: grid;
+	grid-template-columns: 20px min-content 20px;
+	grid-template-areas: '. . close-button' '. form .';
+}
+
+@media screen and (max-width: 580px) {
+	.popup__container {
+		grid-template-columns: auto;
+		grid-template-areas: '. close-button .' '. form .';
+		row-gap: 16px;
+	}
+}

@@ -8,5 +8,12 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	margin: 0 20px;
+	margin: 0px;
+	grid-area: close-button;
+}
+
+@media screen and (max-width: 580px) {
+	.popup__close-button {
+		justify-self: flex-end;
+	}
 }

@@ -1,17 +1,21 @@
 .profile {
 	display: grid;
-	/*grid-template-columns: max-content minmax(min-content, 1fr) max-content;*/
+	grid-template-columns: min-content auto 1fr min-content;
 	grid-template-areas:
-			'avatar title edit-button . add-button'
-			'avatar subtitle . . add-button';
+			'avatar title edit-button add-button'
+			'avatar subtitle . add-button';
 	margin-bottom: 47px;
+	column-gap: 20px;
 }
 
 @media screen and (max-width: 580px) {
 	.profile {
+		column-gap: unset;
+		align-self: center;
+		grid-template-columns: 34px auto 34px;
 		grid-template-areas:
-			'avatar avatar' 'title edit-button'
-			'subtitle subtitle' 'add-button add-button';
+			'avatar avatar avatar' '. title edit-button'
+			'. subtitle .' 'add-button add-button add-button';
 		margin-bottom: 36px;
 	}
 }
