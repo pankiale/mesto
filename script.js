@@ -5,7 +5,7 @@ let popup = document.querySelector('.popup');
 let profileName = document.querySelector('.profile__title');
 let profileJob = document.querySelector('.profile__subtitle');
 let nameInput = document.querySelector('.form__item_prof_title');
-let jobInput = document.querySelector('.form__tiem_prof_subtitle');
+let jobInput = document.querySelector('.form__item_prof_subtitle');
 
 editButton.addEventListener('click', function () {
     popup.classList.add('popup_open');
