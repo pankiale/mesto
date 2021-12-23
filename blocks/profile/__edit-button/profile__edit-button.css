@@ -4,7 +4,7 @@
 	border: 1px solid #FFFFFF;
 	background-color: #000000;
 	box-sizing: border-box;
-	background-image: url("/images/button_edit.svg");
+	background-image: url("./images/button_edit.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
