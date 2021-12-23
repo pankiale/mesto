@@ -2,6 +2,7 @@
 	width: 128px;
 	height: 128px;
 	border-radius: 64px;
+	grid-area: avatar;
 }
 
 @media screen and (max-width: 580px) {
