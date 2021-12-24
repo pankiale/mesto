@@ -13,4 +13,5 @@
 
 .element__like-button:active {
 	background-image: url("../../../images/heart_black.svg");
+	opacity: unset;
 }

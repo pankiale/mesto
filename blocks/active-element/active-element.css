@@ -1,0 +1,7 @@
+.active-element {
+	transition: opacity .3s linear;
+}
+
+.active-element:hover {
+	opacity: .5;
+}
