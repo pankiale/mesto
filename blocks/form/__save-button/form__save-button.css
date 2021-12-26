@@ -15,9 +15,9 @@
 	margin-top: 15px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
 	.form__save-button {
-		width: 238px;
-		height: 46px;
+		width: max(238px, 83.26%);
+		height: max(46px, 8.47vw);
 	}
 }

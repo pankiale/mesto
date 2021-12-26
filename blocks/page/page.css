@@ -12,13 +12,8 @@
 	z-index: 0;
 }
 
-@media screen and (max-width: 1140px ) {
-	.page {
-		padding: 45px 100px 60px;
-	}
-}
 
-@media screen and (max-width: 840px ) {
+@media screen and (max-width: 980px ) {
 	.page {
 		padding: 45px 50px 60px;
 	}
@@ -26,11 +21,11 @@
 
 @media screen and (max-width: 680px ) {
 	.page {
-		padding: 45px 25px 60px;
+		padding: 45px 19px 60px;
 	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
 	.page {
 		padding: 28px 0px 36px;
 	}

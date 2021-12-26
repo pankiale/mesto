@@ -13,7 +13,7 @@
 	grid-area: add-button;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
 	.profile__add-button {
 		width: 282px;
 		justify-self: center;

@@ -7,7 +7,7 @@
 	z-index: 0;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
 	.content {
 		padding: 36px 19px 48px;
 	}

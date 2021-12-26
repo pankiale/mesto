@@ -12,8 +12,8 @@
 	grid-area: form;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
 	.form {
-		width: 282px;
+		width: 100%;
 	}
 }
