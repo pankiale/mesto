@@ -4,10 +4,12 @@
 	line-height: 29px;
 	color: #000000;
 	margin: 0 0 54px 0;
+	width: calc(100% - 36px * 2);
 }
 
 @media screen and (max-width: 590px) {
 	.form__title {
+		width: 83.26%;
 		font-size: max(18px, 4.07vw);
 		line-height: 22px;
 	}

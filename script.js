@@ -33,5 +33,3 @@ submitForm.addEventListener('submit', formSubmitHandler);
 
 
 
-
-
