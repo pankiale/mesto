@@ -2,85 +2,106 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Место</title>
-    <link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Место</title>
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
 <header class="header">
-    <a href="#"><img class="header__logo active-element" src="./images/logo.svg" alt="лого"/></a>
+  <a href="#"><img class="header__logo active-element_hover_all-other" src="./images/logo.svg" alt="лого"/></a>
 </header>
 <main class="content">
-    <section class="profile">
-        <img class="profile__avatar" src="./images/kusto.jpg" alt="Кусто">
-        <h1 class="profile__title">Жак-Ив Кусто</h1>
-        <button class="profile__edit-button active-element"></button>
-        <p class="profile__subtitle">Исследователь океана</p>
-        <button class="profile__add-button active-element"></button>
-    </section>
-    <section class="elements">
-        <article class="element">
-            <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-            <div class="element__wrapper">
-                <h2 class=" element__title">Карачаевск</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-            <div class="element__wrapper">
-                <h2 class="element__title">Гора Эльбрус</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-            <div class="element__wrapper">
-                <h2 class="element__title">Домбай</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-            <div class="element__wrapper">
-                <h2 class="element__title">Гора Эльбрус</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-            <div class="element__wrapper">
-                <h2 class="element__title">Домбай</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-            <div class="element__wrapper">
-                <h2 class="element__title">Карачаево-Черкессия</h2>
-                <button class="element__like-button active-element"></button>
-            </div>
-        </article>
-    </section>
-    <section class="popup">
-        <div class="popup__container">
-            <button class="popup__close-button active-element"></button>
-            <form class="form">
-                <h2 class="form__title">Редактировать профиль</h2>
-                <fieldset class="form__input-container">
-                    <input type="text" class="form__item form__item_prof_title" required>
-                    <input type="text" class="form__item form__item_prof_subtitle" required>
-                </fieldset>
-                <button class="form__save-button active-element" type="submit">Сохранить</button>
-            </form>
-        </div>
-    </section>
+  <section class="profile">
+    <img class="profile__avatar" src="./images/kusto.jpg" alt="Кусто">
+    <h1 class="profile__title">Жак-Ив Кусто</h1>
+    <button class="profile__edit-button active-element_hover_all-other" type="button"></button>
+    <p class="profile__subtitle">Исследователь океана</p>
+    <button class="profile__add-button active-element_hover_all-other" type="button"></button>
+  </section>
+  <section class="elements">
+    <!-- добавил два доп фото разного размера чтобы проверить как фото помещаются
+    также вставил длинный текст - я не могу воспроизвести проблему, у меня длинный текст
+    не сдвигает и не обрезает кнопку-->
+    <article class="element">
+      <img class="element__image" src="./Russia.jpeg" alt="Карачаевск">
+      <div class="element__wrapper">
+        <h2 class=" element__title">Очень длинное название</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./Portural.jpeg" alt="Карачаевск">
+      <div class="element__wrapper">
+        <h2 class=" element__title">Карачаевск fgfgf fgfgfg d</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+      <div class="element__wrapper">
+        <h2 class=" element__title">Карачаевск</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+      <div class="element__wrapper">
+        <h2 class="element__title">Гора Эльбрус</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+      <div class="element__wrapper">
+        <h2 class="element__title">Домбай</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+      <div class="element__wrapper">
+        <h2 class="element__title">Гора Эльбрус</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+      <div class="element__wrapper">
+        <h2 class="element__title">Домбай</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+    <article class="element">
+      <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+      <div class="element__wrapper">
+        <h2 class="element__title">Карачаево-Черкессия</h2>
+        <button class="element__like-button active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+  </section>
 </main>
 <footer class="footer">
-    <p class="footer__copyright">© 2020 Mesto Russia</p>
+  <p class="footer__copyright">© 2020 Mesto Russia</p>
 </footer>
-<script src="script.js"></script>
+<div class="popup">
+  <div class="popup__container">
+    <!-- извините я не понял комментарий. я использую грид ареаз для позицинирования кнопки.
+    при такой верстке я не смогу перенести сюда стили из формы.
+    вы не согласны с этим подходом к верстке и хотите чтобы я позиционировал
+    кнопу закрытия абсолюно? поясните пожалуйста. спасибо-->
+    <button class="popup__close-button active-element_hover_all-other" type="button"></button>
+    <form class="form" name="form">
+      <h2 class="form__title">Редактировать профиль</h2>
+      <fieldset class="form__input-container">
+        <input type="text" name="prof_title" class="form__item form__item_prof_title" required>
+        <input type="text" name="prof_subtitle" class="form__item form__item_prof_subtitle" required>
+      </fieldset>
+      <button class="form__save-button active-element_hover_save-button" type="submit">Сохранить</button>
+    </form>
+  </div>
+</div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
