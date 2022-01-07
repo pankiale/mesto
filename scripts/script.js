@@ -7,24 +7,29 @@ let profileJob = document.querySelector('.profile__subtitle');
 let nameInput = document.querySelector('.form__item_prof_title');
 let jobInput = document.querySelector('.form__item_prof_subtitle');
 
-editButton.addEventListener('click', function () {
+function openPopUp() {
   popup.classList.add('popup_open');
+  document.body.style.overflow = 'hidden';
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
-});
+}
 
-
-closeButton.addEventListener('click', function () {
+function closePopUp() {
   popup.classList.remove('popup_open');
-});
+  document.body.style.overflow = '';
+  nameInput.value = '';
+  jobInput.value = '';
+}
 
 function formSubmitHandler(evt) {
   evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
-  popup.classList.remove('popup_open');
+  closePopUp();
 }
 
+editButton.addEventListener('click', openPopUp);
+closeButton.addEventListener('click', closePopUp);
 submitForm.addEventListener('submit', formSubmitHandler);
 
 
