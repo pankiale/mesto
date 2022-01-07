@@ -22,23 +22,6 @@
     <button class="profile__add-button  active-element active-element_hover_all-other" type="button"></button>
   </section>
   <section class="elements">
-    <!-- добавил два доп фото разного размера чтобы проверить как фото помещаются
-    также вставил длинный текст - я не могу воспроизвести проблему, у меня длинный текст
-    не сдвигает и не обрезает кнопку-->
-    <article class="element">
-      <img class="element__image" src="./Russia.jpeg" alt="Карачаевск">
-      <div class="element__wrapper">
-        <h2 class=" element__title">Очень длинное название</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./Portural.jpeg" alt="Карачаевск">
-      <div class="element__wrapper">
-        <h2 class=" element__title">Карачаевск fgfgf fgfgfg d</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
     <article class="element">
       <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
       <div class="element__wrapper">
@@ -87,21 +70,19 @@
   <p class="footer__copyright">© 2020 Mesto Russia</p>
 </footer>
 <div class="popup">
-  <div class="popup__container">
-    <!-- извините я не понял комментарий. я использую грид ареаз для позицинирования кнопки.
-    при такой верстке я не смогу перенести сюда стили из формы.
-    вы не согласны с этим подходом к верстке и хотите чтобы я позиционировал
-    кнопу закрытия абсолюно? поясните пожалуйста. спасибо-->
+  <div class="popup__grid">
     <button class="popup__close-button  active-element active-element_hover_all-other" type="button"></button>
-    <form class="form" name="form">
-      <h2 class="form__title">Редактировать профиль</h2>
-      <fieldset class="form__input-container">
-        <input type="text" name="prof_title" class="form__item form__item_prof_title" required>
-        <input type="text" name="prof_subtitle" class="form__item form__item_prof_subtitle" required>
-      </fieldset>
-      <button class="form__save-button  active-element active-element_hover_save-button" type="submit">Сохранить
-      </button>
-    </form>
+    <div class="popup__container">
+      <form class="form" name="form">
+        <h2 class="form__title">Редактировать профиль</h2>
+        <fieldset class="form__input-container">
+          <input type="text" name="prof_title" class="form__item form__item_prof_title" required>
+          <input type="text" name="prof_subtitle" class="form__item form__item_prof_subtitle" required>
+        </fieldset>
+        <button class="form__save-button  active-element active-element_hover_save-button" type="submit">Сохранить
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 <script src="scripts/script.js"></script>

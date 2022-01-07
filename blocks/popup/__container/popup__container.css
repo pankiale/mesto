@@ -1,15 +1,17 @@
 .popup__container {
-  display: grid;
-  grid-template-columns: 48px min-content 48px;
-  grid-template-areas: '. . close-button' '. form .';
-  justify-content: center;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  grid-area: form;
 }
 
 @media screen and (max-width: 590px) {
   .popup__container {
-    grid-template-columns: min-content min(430px, 100%) min-content;
-    grid-template-areas: '. close-button .' '. form .';
-    row-gap: 16px;
-    width: max(280px, calc(100% - 5.94vw * 2));
+    width: 100%;
   }
 }

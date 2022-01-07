@@ -1,5 +1,3 @@
-//я понял коппентарии по скрипту, я перепишу, хочу сначала закрыть вопросы по верстке и стилям
-
 let editButton = document.querySelector('.profile__edit-button');
 let closeButton = document.querySelector('.popup__close-button');
 let submitForm = document.querySelector('.form');
