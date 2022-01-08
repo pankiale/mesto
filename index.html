@@ -8,72 +8,75 @@
   <title>Место</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="page">
-<header class="header">
-  <a href="#"><img class="header__logo active-element active-element_hover_all-other" src="./images/logo.svg"
-                   alt="лого"/></a>
-</header>
-<main class="content">
-  <section class="profile">
-    <img class="profile__avatar" src="./images/kusto.jpg" alt="Кусто">
-    <h1 class="profile__title">Жак-Ив Кусто</h1>
-    <button class="profile__edit-button  active-element active-element_hover_all-other" type="button"></button>
-    <p class="profile__subtitle">Исследователь океана</p>
-    <button class="profile__add-button  active-element active-element_hover_all-other" type="button"></button>
-  </section>
-  <section class="elements">
-    <article class="element">
-      <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-      <div class="element__wrapper">
-        <h2 class=" element__title">Карачаевск</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-      <div class="element__wrapper">
-        <h2 class="element__title">Гора Эльбрус</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-      <div class="element__wrapper">
-        <h2 class="element__title">Домбай</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-      <div class="element__wrapper">
-        <h2 class="element__title">Гора Эльбрус</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-      <div class="element__wrapper">
-        <h2 class="element__title">Домбай</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-    <article class="element">
-      <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-      <div class="element__wrapper">
-        <h2 class="element__title">Карачаево-Черкессия</h2>
-        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-      </div>
-    </article>
-  </section>
-</main>
-<footer class="footer">
-  <p class="footer__copyright">© 2020 Mesto Russia</p>
-</footer>
-<div class="popup">
-  <div class="popup__grid">
-    <button class="popup__close-button  active-element active-element_hover_all-other" type="button"></button>
+  <header class="header">
+    <a href="#"><img class="header__logo active-element active-element_hover_all-other" src="./images/logo.svg"
+        alt="лого" /></a>
+  </header>
+  <main class="content">
+    <section class="profile">
+      <img class="profile__avatar" src="./images/kusto.jpg" alt="Аватар пользователя">
+      <h1 class="profile__title">Жак-Ив Кусто</h1>
+      <button aria-label="кнопка редактирования профиля"
+        class="profile__edit-button  active-element active-element_hover_all-other" type="button"></button>
+      <p class="profile__subtitle">Исследователь океана</p>
+      <button aria-label="кнопка добавления профиля"
+        class="profile__add-button  active-element active-element_hover_all-other" type="button"></button>
+    </section>
+    <section class="elements">
+      <article class="element">
+        <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+        <div class="element__wrapper">
+          <h2 class=" element__title">Карачаевск</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+        <div class="element__wrapper">
+          <h2 class="element__title">Гора Эльбрус</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+        <div class="element__wrapper">
+          <h2 class="element__title">Домбай</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+        <div class="element__wrapper">
+          <h2 class="element__title">Гора Эльбрус</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+        <div class="element__wrapper">
+          <h2 class="element__title">Домбай</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+        <div class="element__wrapper">
+          <h2 class="element__title">Карачаево-Черкессия</h2>
+          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">© 2020 Mesto Russia</p>
+  </footer>
+  <div class="popup">
     <div class="popup__container">
-      <form class="form" name="form">
+      <button aria-label="кнопка закрытия поп-ап"
+        class="popup__close-button  active-element active-element_hover_all-other" type="button"></button>
+      <form class="form" name="prof_form">
         <h2 class="form__title">Редактировать профиль</h2>
         <fieldset class="form__input-container">
           <input type="text" name="prof_title" class="form__item form__item_prof_title" required>
@@ -84,7 +87,7 @@
       </form>
     </div>
   </div>
-</div>
-<script src="scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

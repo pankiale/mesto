@@ -1,6 +1,6 @@
 .popup__close-button {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border: none;
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +11,9 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  grid-area: close-button;
+  position: absolute;
+  right: -40px;
+  top: -40px;
 }
 
 @media screen and (max-width: 590px) {
@@ -19,6 +21,7 @@
     background-size: 20px;
     width: 20px;
     height: 20px;
-    justify-self: flex-end;
+    right: 0px;
+    top: -36px;
   }
 }

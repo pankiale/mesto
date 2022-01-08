@@ -9,14 +9,12 @@ let jobInput = document.querySelector('.form__item_prof_subtitle');
 
 function openPopUp() {
   popup.classList.add('popup_open');
-  document.body.style.overflow = 'hidden';
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
 }
 
 function closePopUp() {
   popup.classList.remove('popup_open');
-  document.body.style.overflow = '';
   nameInput.value = '';
   jobInput.value = '';
 }

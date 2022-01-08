@@ -7,11 +7,11 @@
   color: #000000;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  grid-area: form;
+  position: relative;
 }
 
 @media screen and (max-width: 590px) {
   .popup__container {
-    width: 100%;
+    width: max(282px, 72.88%);
   }
 }
