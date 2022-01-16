@@ -25,6 +25,7 @@
         class="profile__add-button  active-element active-element_hover_all-other" type="button"></button>
     </section>
     <section class="elements">
+      <!--
       <article class="element">
         <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
         <div class="element__wrapper">
@@ -32,55 +33,48 @@
           <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
         </div>
       </article>
-      <article class="element">
-        <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-        <div class="element__wrapper">
-          <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-        </div>
-      </article>
-      <article class="element">
-        <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-        <div class="element__wrapper">
-          <h2 class="element__title">Домбай</h2>
-          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-        </div>
-      </article>
-      <article class="element">
-        <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-        <div class="element__wrapper">
-          <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-        </div>
-      </article>
-      <article class="element">
-        <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-        <div class="element__wrapper">
-          <h2 class="element__title">Домбай</h2>
-          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-        </div>
-      </article>
-      <article class="element">
-        <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-        <div class="element__wrapper">
-          <h2 class="element__title">Карачаево-Черкессия</h2>
-          <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
-        </div>
-      </article>
+      -->
     </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
-  <div class="popup">
+  <template id="element-template">
+    <article class="element">
+      <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+      <button class="element__delete-button active-element active-element_hover_all-other"
+      aria-label=" кнопка удаления фотокарточки" type="button"></button>
+      <div class="element__wrapper">
+        <h2 class=" element__title">Карачаевск</h2>
+        <button class="element__like-button  active-element active-element_hover_like" type="button"></button>
+      </div>
+    </article>
+  </template>
+  <div class="popup popup__avatar">
     <div class="popup__container">
       <button aria-label="кнопка закрытия поп-ап"
-        class="popup__close-button  active-element active-element_hover_all-other" type="button"></button>
-      <form class="form" name="prof_form">
+        class="popup__close-button popup__close-button_avatar active-element active-element_hover_all-other"
+        type="button"></button>
+      <form class="form form_prof" name="form_prof">
         <h2 class="form__title">Редактировать профиль</h2>
         <fieldset class="form__input-container">
           <input type="text" name="prof_title" class="form__item form__item_prof_title" required>
           <input type="text" name="prof_subtitle" class="form__item form__item_prof_subtitle" required>
+        </fieldset>
+        <button class="form__save-button  active-element active-element_hover_save-button" type="submit">Сохранить
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup__photo-card">
+    <div class="popup__container">
+      <button aria-label="кнопка закрытия поп-ап"
+        class="popup__close-button  popup__close-button_photo-card active-element active-element_hover_all-other" type="button"></button>
+      <form class="form form_photo" name="form_photo">
+        <h2 class="form__title">Новое место</h2>
+        <fieldset class="form__input-container">
+          <input placeholder="Название" type="text" name="photo_title" class="form__item form__item_photo_title" required>
+          <input placeholder="Ссылка на картинку" type="text" name="photo_subtitle" class="form__item form__item_photo_link" required>
         </fieldset>
         <button class="form__save-button  active-element active-element_hover_save-button" type="submit">Сохранить
         </button>
